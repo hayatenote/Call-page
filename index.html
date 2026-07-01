@@ -93,6 +93,14 @@
     text-shadow: 0 2px 8px rgba(0,0,0,0.4);
   }
 
+  .tagline {
+    font-size: 11px;
+    color: rgba(255,255,255,0.55);
+    letter-spacing: 0.08em;
+    margin-bottom: 18px;
+    line-height: 1.7;
+  }
+
   .call-button {
     display: flex;
     flex-direction: column;
@@ -131,13 +139,42 @@
     letter-spacing: 0.04em;
   }
 
-  .hint {
-    margin-top: 16px;
-    font-size: 11px;
-    color: #c9b9ac;
-    letter-spacing: 0.05em;
-    text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+
+  .hours {
+    margin-bottom: 18px;
+    padding: 0 4px;
   }
+
+  .hours-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+  }
+
+  .hours-divider {
+    height: 1px;
+    background: rgba(255,255,255,0.15);
+    margin: 2px 0;
+  }
+
+  .hours-day {
+    font-size: 11px;
+    letter-spacing: 0.15em;
+    color: #c9b9ac;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  .hours-time {
+    font-family: 'Shippori Mincho', serif;
+    font-size: 13px;
+    color: #fdf8f2;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+  }
+
+
 </style>
 </head>
 <body>
@@ -151,19 +188,31 @@
   </div>
 
   <div class="card">
+    
+    <div class="hours">
+      <div class="hours-row">
+        <span class="hours-day">Sun – Thu</span>
+        <span class="hours-time">18:00 – 24:00</span>
+      </div>
+      <div class="hours-divider"></div>
+      <div class="hours-row">
+        <span class="hours-day">Fri · Sat</span>
+        <span class="hours-time">18:00 – 26:00</span>
+      </div>
+    </div>
     <div class="label">RESERVATION</div>
     <div class="shop-name">あつあつリカーリカ</div>
     <div class="sub">ご予約・お問い合わせ</div>
 
-    <a href="tel:08048582233" class="call-button">
+<a href="tel:08048582233" class="call-button">
       <svg class="icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M6.62 10.79C8.06 13.62 10.38 15.93 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.55 15.5 21 15.95 21 16.5V20C21 20.55 20.55 21 20 21C10.61 21 3 13.39 3 4C3 3.45 3.45 3 4 3H7.5C8.05 3 8.5 3.45 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="#fff"/>
       </svg>
       <span class="call-text">タップして電話をかける</span>
       <span class="number">080-4858-2233</span>
     </a>
+    <div class="tagline">ナチュラルワインとイタリアンのお店<br>※ソフトドリンクはありません。</div>
 
-    <div class="hint">営業時間内にお電話ください</div>
   </div>
 </body>
 </html>
